@@ -34,7 +34,8 @@
 
 form {
   width: 550px;
-  padding: 25px;
+  padding: 35px 25px;
+  border-radius: 5px;
 
   background-color: #fff;
 
@@ -66,7 +67,7 @@ form label {
   height: 35px;
   padding: 25px 10px;
   border: 1px solid #ddd;
-  border-radius: 4px;
+  border-radius: 5px;
 
   font: 18px 'Montserrat';
   color: #8395a7;
@@ -106,7 +107,7 @@ form label {
   display: block;
 
   padding: 12px;
-  border-radius: 4px;
+  border-radius: 5px;
   border: none;
   margin: 45px auto 0 auto;
 

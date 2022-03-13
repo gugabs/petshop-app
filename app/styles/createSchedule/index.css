@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+.container {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 15px;
+  }
+}
+
+.page-title {
+  font: bold 36px 'Montserrat';
+  color: #ff9f43;
+}
+
+@media (max-width: 768px) {
+  .page-title {
+    text-align: center;
+  }
+}
+
+.page-title span {
+  margin: 0 10px;
+
+  font-size: 48px;
+}
+
+form {
+  width: 550px;
+  padding: 25px;
+
+  background-color: #fff;
+
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+@media (max-width: 768px) {
+  form {
+    width: 100%;
+  }
+}
+
+form label {
+  display: block;
+
+  margin-bottom: 10px;
+
+  font: 16px 'Montserrat';
+  color: #353b48;
+}
+
+.field {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.field > input {
+  width: 100%;
+  height: 35px;
+  padding: 25px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+
+  font: 18px 'Montserrat';
+  color: #8395a7;
+
+  background-color: #f9f9f9;
+}
+
+.field > input::placeholder {
+  opacity: 0.55;
+  color: #8395a7;
+}
+
+.field > input:hover {
+  border: 1px solid #6d6d6d;
+}
+
+.field > input:focus {
+  outline: none;
+
+  border: 1px solid #ff9f43;
+}
+
+.service-options {
+  width: 100%;
+
+  display: flex;
+  gap: 7px;
+}
+
+@media (max-width: 768px) {
+  .service-options {
+    flex-direction: column;
+  }
+}
+
+.confirm-schedule {
+  display: block;
+
+  padding: 12px;
+  border-radius: 4px;
+  border: none;
+  margin: 45px auto 0 auto;
+
+  font: bold 14px 'Montserrat';
+  color: #fff;
+
+  background-color: #ff9f43;
+
+  transition: all 75ms ease-in;
+}
+
+.confirm-schedule:hover {
+  cursor: pointer;
+
+  filter: brightness(0.85);
+}
+
+.custom-shape-divider-bottom-1646357480 {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  z-index: -5;
+}
+
+.custom-shape-divider-bottom-1646357480 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 100px;
+}
+
+.custom-shape-divider-bottom-1646357480 .shape-fill {
+  fill: #ff9f43;
+}

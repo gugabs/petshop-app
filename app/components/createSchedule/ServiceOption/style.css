@@ -1,0 +1,56 @@
+.option {
+  flex: 1;
+  height: 45px;
+
+  position: relative;
+
+  display: flex;
+
+  border: 2px solid #ff9f43;
+
+  transition: border 75ms ease-in;
+}
+
+.option:hover {
+  cursor: pointer;
+
+  border: 2px solid #2ecc71;
+}
+
+.option-icon {
+  padding: 15px;
+
+  display: flex;
+  align-items: center;
+
+  color: #ff9f43;
+}
+
+.option-description {
+  display: flex;
+  align-items: center;
+
+  font: bold 16px 'Montserrat';
+  color: #6d6d6d;
+
+  letter-spacing: 1px;
+}
+
+.option.selected {
+  border: 2px solid #2ecc71;
+}
+
+.select-check {
+  position: absolute;
+  inset: auto -5px -5px auto;
+
+  display: flex;
+  align-items: center;
+
+  font-size: 22px;
+  color: #2ecc71;
+}
+
+.hidden {
+  display: none;
+}

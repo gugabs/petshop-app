@@ -90,6 +90,10 @@ form label {
   border: 1px solid #ff9f43;
 }
 
+.field > .input-error {
+  border: 2px solid #ff0000;
+}
+
 .service-options {
   width: 100%;
 

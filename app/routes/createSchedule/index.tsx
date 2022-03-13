@@ -27,7 +27,7 @@ import { DateTimePicker, LocalizationProvider } from '@mui/lab';
 
 import { FaCut, FaShower, FaTaxi } from 'react-icons/fa';
 
-import { snackBarErrorConfig } from '~/utils/notistack';
+import { snackBarErrorConfig, snackBarSuccessConfig } from '~/utils/notistack';
 import { dateTimePickerStyle } from '~/utils/mui';
 
 export const links: LinksFunction = () => {
@@ -152,6 +152,18 @@ export default function CreateSchedule() {
 
         return;
       }
+
+      if (fieldKey === 'datetime') {
+        const dateTime: string = formData.datetime;
+
+        if (dateTime === 'NaN') {
+          enqueueSnackbar(
+            `Preencha o campo "Data e Hora do Agendamento" corretamente`,
+            snackBarErrorConfig
+          );
+          return;
+        }
+      }
     }
 
     if (!selectedImage) {
@@ -172,7 +184,7 @@ export default function CreateSchedule() {
     api
       .post('/petshop/schedule', form)
       .then(() => {
-        enqueueSnackbar('Agendamento cadastrado!');
+        enqueueSnackbar('Agendamento cadastrado!', snackBarSuccessConfig);
         navigate('/');
       })
       .catch((err) => {

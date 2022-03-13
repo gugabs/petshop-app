@@ -7,3 +7,11 @@ export const snackBarErrorConfig: OptionsObject = {
   },
   variant: 'error',
 };
+
+export const snackBarSuccessConfig: OptionsObject = {
+  anchorOrigin: {
+    vertical: 'top',
+    horizontal: 'right',
+  },
+  variant: 'success',
+};

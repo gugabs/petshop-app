@@ -16,6 +16,12 @@
   transition: filter 75ms ease-in;
 }
 
+@media (max-width: 768px) {
+  .dropzone {
+    padding: 10px;
+  }
+}
+
 .dropzone.selected {
   border: 4px solid #ff9f43;
 }

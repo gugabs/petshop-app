@@ -34,7 +34,7 @@ export default function Index() {
             <h2>Faça o agendamento de um de nossos serviços agora mesmo!</h2>
             <div className="welcome-btn-container">
               <Link to={'/createSchedule'}>
-                <div className="welcome-btn-wrapper">
+                <div className="welcome-btn">
                   <span>Agendar</span>
                 </div>
               </Link>

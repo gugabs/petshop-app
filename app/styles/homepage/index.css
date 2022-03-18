@@ -112,15 +112,21 @@
   }
 }
 
-.welcome-btn-wrapper {
+.welcome-btn {
   display: inline-block;
 
   padding: 12px;
   border-radius: 5px;
   border: 3px solid #fff;
 
-  font: 22px 'Montserrat';
+  font: bold 22px 'Montserrat';
   color: #fff;
+
+  transition: border-color 75ms ease-in;
+}
+
+.welcome-btn:hover {
+  border-color: #feca57;
 }
 
 .section-schedules {
@@ -128,7 +134,7 @@
   min-height: 100vh;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .welcome-section-divider {
     display: none;
   }

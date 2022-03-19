@@ -7,8 +7,10 @@ import WelcomeSectionIllustration from '~/components/homepage/WelcomeSectionIllu
 
 import {
   WelcomeSectionDivider,
-  links as WelcomeSectionDividerLinks,
+  links as welcomeSectionDividerLinks,
 } from '~/components/homepage/WelcomeSectionDivider';
+
+import { ScheduleCard, links as scheduleCardLinks } from '~/components/homepage/ScheduleCard';
 
 export const links: LinksFunction = () => {
   return [
@@ -20,7 +22,8 @@ export const links: LinksFunction = () => {
       rel: 'stylesheet',
       href: componentStyle,
     },
-    ...WelcomeSectionDividerLinks(),
+    ...welcomeSectionDividerLinks(),
+    ...scheduleCardLinks(),
   ];
 };
 
@@ -48,7 +51,16 @@ export default function Index() {
             <WelcomeSectionDivider />
           </div>
         </section>
-        <section className="section-schedules"></section>
+        <section className="section-schedules">
+          <h1>Últimos agendamentos</h1>
+          <div className="schedules-grid">
+            <ScheduleCard size={'s-2x1'} />
+            <ScheduleCard size={'s-1x1'} />
+            <ScheduleCard size={'s-1x2'} />
+            <ScheduleCard size={'s-1x1'} />
+            <ScheduleCard size={'s-2x1'} />
+          </div>
+        </section>
       </div>
     </>
   );

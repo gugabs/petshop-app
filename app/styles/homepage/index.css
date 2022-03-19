@@ -134,8 +134,40 @@
   min-height: 100vh;
 }
 
+.section-schedules > h1 {
+  padding-left: 55px;
+
+  font: 32px 'Montserrat';
+  color: gray;
+}
+
 @media (max-width: 1024px) {
   .welcome-section-divider {
     display: none;
+  }
+}
+
+.schedules-grid {
+  min-height: 100vh;
+
+  padding: 55px;
+
+  display: grid;
+
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+@media (max-width: 768px) {
+  .schedules-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .schedules-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
   }
 }
